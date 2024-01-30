@@ -1,0 +1,141 @@
+body {
+  --accent-color: #962f34;
+  --background-color: white;
+  --text-color: black;
+  --button-text-color: var(--background-color);
+  --transition-delay: 1s;
+
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  transition: var(--transition-delay);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark {
+  --accent-color: #72cce0;
+  --background-color: #333;
+  --text-color: white;
+}
+
+a {
+  color: var(--text-color);
+  transition: var(--transition-delay);
+  padding-bottom: 4px;
+}
+
+.theme-button-container {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.theme-toggle-button {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: .5em 1em;
+  border-radius: .3em;
+  outline: none;
+  transition: var(--transition-delay);
+  transform: scale(1);
+}
+
+.intro-t1 {
+  font-size: 1.1rem;
+}
+
+.intro-t2 {
+  margin-top: 0px;
+  font-size: 3.0rem;
+  font-weight: 700;
+  transition: var(--transition-delay);
+  color: var(--accent-color);
+}
+
+.intro-t3 {
+  margin-top: -6px;
+  font-size: 1.6rem;
+}
+
+.introduction-container {
+  padding: 10px;
+  padding-bottom: 80px;
+  margin-top: 100px;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.github-icon {
+  height: 40px;
+  width: 40px;
+  transition: fill var(--transition-delay);
+  fill: var(--accent-color);
+}
+
+.linkedin-icon {
+  height: 40px;
+  width: 40px;
+  transition: fill var(--transition-delay);
+  fill: var(--accent-color);
+}
+
+.projects {
+  padding: 10px;
+  width: 480px;
+}
+
+.projects-header {
+  font-size: 2.0rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.project-description {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 580px) {
+  .introduction-container {
+    width: 95%;
+  }
+
+  .intro-t1 {
+    font-size: 1.0rem;
+  }
+  
+  .intro-t2 {
+    margin-top: 0px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: var(--transition-delay);
+    color: var(--accent-color);
+  }
+  
+  .intro-t3 {
+    margin-top: -6px;
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    width: 95%;
+  }
+}
